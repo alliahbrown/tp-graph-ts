@@ -20,7 +20,7 @@
     "ol": "latest",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "vite": "^5.4.21"
+    "vite": "^7.2.2"
   },
   "dependencies": {
     "@turf/length": "^7.2.0",

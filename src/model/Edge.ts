@@ -8,8 +8,20 @@ import { lineString } from "@turf/turf";
  */
 export class Edge {
     id: string;
-    source: Vertex;
-    target: Vertex;
+    
+    private source: Vertex;
+    private target: Vertex;
+
+    constructor(source : Vertex, target: Vertex) {
+        this.source = source;
+        this.target = target;
+    }
+
+    getSource(){
+        return this.source}
+
+    getTarget(){
+        return this.target}
 
     getLength(): number {
         return length(lineString(this.getGeometry().coordinates));
